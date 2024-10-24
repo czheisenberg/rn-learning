@@ -12,6 +12,7 @@ import Demo2 from './Client/demo1/demo2';
 import Demo3 from './Client/demo1/demo3';
 import Demo4_FlatList from './Client/demo1/demo4-FlatList';
 import Demo5_SectionList from './Client/demo1/demo5-SectionList';
+import Demo6Flexbox from './Client/demo1/demo6-Flexbox';
 
 const App = () =>{
   return(
@@ -40,7 +41,8 @@ const App = () =>{
     //   {/* <Demo3 /> */}
     // </ScrollView>
     // <Demo4_FlatList />
-    <Demo5_SectionList />
+    // <Demo5_SectionList />
+    <Demo6Flexbox />
   )
 }
 
