@@ -13,6 +13,7 @@ import Demo3 from './Client/demo1/demo3';
 import Demo4_FlatList from './Client/demo1/demo4-FlatList';
 import Demo5_SectionList from './Client/demo1/demo5-SectionList';
 import Demo6Flexbox from './Client/demo1/demo6-Flexbox';
+import Demo7Touch from './Client/demo1/demo7-touch';
 
 const App = () =>{
   return(
@@ -42,7 +43,8 @@ const App = () =>{
     // </ScrollView>
     // <Demo4_FlatList />
     // <Demo5_SectionList />
-    <Demo6Flexbox />
+    // <Demo6Flexbox />
+    <Demo7Touch />
   )
 }
 
