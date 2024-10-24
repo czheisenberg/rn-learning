@@ -7,6 +7,7 @@ import {
   TextInput
 } from 'react-native';
 
+import { NavigationContainer } from '@react-navigation/native';
 import Demo1 from './Client/demo1/demo1';
 import Demo2 from './Client/demo1/demo2';
 import Demo3 from './Client/demo1/demo3';
@@ -44,7 +45,10 @@ const App = () =>{
     // <Demo4_FlatList />
     // <Demo5_SectionList />
     // <Demo6Flexbox />
-    <Demo7Touch />
+   
+    <NavigationContainer>
+       <Demo7Touch />
+    </NavigationContainer>
   )
 }
 
