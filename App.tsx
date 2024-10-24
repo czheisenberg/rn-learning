@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Demo1 from './Client/demo1/demo1';
 import Demo2 from './Client/demo1/demo2';
 import Demo3 from './Client/demo1/demo3';
@@ -16,6 +17,14 @@ import Demo5_SectionList from './Client/demo1/demo5-SectionList';
 import Demo6Flexbox from './Client/demo1/demo6-Flexbox';
 import Demo7Touch from './Client/demo1/demo7-touch';
 
+const HomeScreen = () =>{
+  return (
+    <View style={{flex:1, alignItems: "center", justifyContent: "center"}}>
+      <Text>Home Screen</Text>
+    </View>
+  )
+}
+const Stack = createNativeStackNavigator();
 const App = () =>{
   return(
     // <ScrollView>
@@ -47,7 +56,10 @@ const App = () =>{
     // <Demo6Flexbox />
    
     <NavigationContainer>
-       <Demo7Touch />
+       {/* <Demo7Touch /> */}
+       <Stack.Navigator>
+          <Stack.Screen name="Home" component={HomeScreen}/>
+       </Stack.Navigator>
     </NavigationContainer>
   )
 }
